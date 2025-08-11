@@ -35,7 +35,7 @@ SportsPredictor es un sistema que permite a los usuarios realizar pronósticos e
 - Facilita testing con implementaciones mock
 - Mantiene consistencia en la interfaz interna
 
-### 3. State (Comportamental)
+### 3. State (Comportamentamiento)
 
 **Problema resuelto**: Estados complejos de pronósticos con comportamientos diferentes y transiciones complejas.
 
@@ -70,41 +70,6 @@ SportsPredictor es un sistema que permite a los usuarios realizar pronósticos e
 - Fácil modificación de reglas de escalamiento
 - Desacoplamiento entre niveles de soporte
 
-## Estructura del Proyecto
-
-```
-src/main/java/com/sportspredictor/
-├── model/                    # Entidades del dominio
-│   ├── Pronostico.java      # Clase principal con patrón State
-│   ├── Incidencia.java      # Entidad para incidencias
-│   ├── Usuario.java         # Usuario del sistema
-│   └── ...
-├── service/                  # Servicios y patrones implementados
-│   ├── Factory Method/
-│   │   ├── IPronosticoFactory.java
-│   │   ├── PronosticoFactory.java
-│   │   ├── INotifierFactory.java
-│   │   └── NotifierFactory.java
-│   ├── Adapter/
-│   │   ├── IDeporteAPI.java
-│   │   ├── FutbolAPIAdapter.java
-│   │   └── BaloncestoAPIAdapter.java
-│   ├── State/
-│   │   ├── IPronosticoState.java
-│   │   ├── PronosticoPendienteState.java
-│   │   ├── PronosticoAcertadoState.java
-│   │   ├── PronosticoFallidoState.java
-│   │   └── PronosticoEnRevisionState.java
-│   ├── Chain of Responsibility/
-│   │   ├── IIncidenciaHandler.java
-│   │   ├── AbstractIncidenciaHandler.java
-│   │   ├── MiembroSoporteHandler.java
-│   │   ├── MiembroQCHandler.java
-│   │   ├── AdministradorHandler.java
-│   │   └── IncidenciaService.java
-│   └── ...
-└── Main.java                 # Clase principal con demostración de patrones
-```
 
 ## Cómo Ejecutar
 
@@ -133,3 +98,4 @@ src/main/java/com/sportspredictor/
 - **Testabilidad**: Cada patrón puede ser probado independientemente
 - **Flexibilidad**: Cambios en APIs externas no afectan el código principal
 - **Claridad**: Lógica de negocio bien separada y fácil de entender
+
