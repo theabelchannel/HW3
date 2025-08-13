@@ -13,7 +13,8 @@ public class Administrador extends Cuenta {
 
     public void gestionarReglas(String nuevasReglas) {
         System.out.println("El administrador " + nombreUsuario + " está gestionando las reglas de puntuación.");
-        // Lógica para actualizar las reglas del sistema
+        // Lógica para actualizar las reglas del sistema.
     }
 
 }
+
