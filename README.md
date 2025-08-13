@@ -99,3 +99,4 @@ SportsPredictor es un sistema que permite a los usuarios realizar pronósticos e
 - **Flexibilidad**: Cambios en APIs externas no afectan el código principal
 - **Claridad**: Lógica de negocio bien separada y fácil de entender
 
+
